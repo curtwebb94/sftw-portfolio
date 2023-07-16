@@ -283,6 +283,10 @@ section {
     margin: 2rem 0 3rem;
 }
 
+span {
+    color: var(--main-color);
+}
+
 .heading {
     font-size: 5rem;
     margin-bottom: 3rem;
