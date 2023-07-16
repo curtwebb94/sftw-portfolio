@@ -87,7 +87,24 @@ section {
     display: flex;
     align-items: center;
     padding: 0 9%;
+    background-size: cover;
+    background-position: center ;
 }
+
+.homeimg {
+    width: 500px; /* Adjust the width and height to fit your requirements */
+    height: 500px;
+    object-fit: cover; /* Ensures the image fills the container */
+    border-radius: 50%; /* This creates the circular shape */
+    
+    position: absolute;
+    top: 54%; /* Adjust this value to vertically center the image */
+    right: 45px; /* Adjust this value to control the distance from the right side */
+    transform: translate(0, -50%); /* Vertically center the image */
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+  }
+  
 
 /* Styles specific to the content within the home section. */
 .home-content {
@@ -214,3 +231,60 @@ section {
     color: var(--text-color);
 }
 
+.about {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   gap: 2rem;
+   background: var(--second-bg-color);
+   padding-bottom: 6rem; 
+}
+
+.about-img {
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img {
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--main-color);
+}
+
+.about-img .circle-spin {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid var(--second-bg-color);
+    border-bottom: .2rem solid var(--second-bg-color);
+    border-left: .2rem solid var(--main-color);
+    border-right: .2rem solid var(--main-color);
+}
+
+.about-content {
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+.heading {
+    font-size: 5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
